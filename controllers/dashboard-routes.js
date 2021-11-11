@@ -1,7 +1,7 @@
 const router = require('express').Router();
 const {Post} = require('../models/');
 
-//need route to only get the USER projects
+//need route to only get the USERS projects
 router
     .get('/', async (req, res) => {
         try {
