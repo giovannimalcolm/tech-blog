@@ -1,5 +1,6 @@
 const router = require('express').Router();
 const {Post} = require('../models/');
+const withAuth = require('../utils/auth');
 
 //shows all of the users posts
 router.get('/', async (req, res) => {
@@ -7,10 +8,8 @@ router.get('/', async (req, res) => {
             const postData = await Post.findAll({
                 where:{
                     userId: req.session.userId
-                }
-             
-                
-            }),
+                },     
+            });
             const posts = postData.map((post) => post.get({ plain: true }));
             res.render('all-posts-admin', {
                 layout: 'dashboard',
