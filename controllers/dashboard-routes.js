@@ -21,7 +21,7 @@ router.get('/', async (req, res) => {
     });
 
 
-    //render new post card
+//render new post 
 router.get('/new', withAuth, (req, res) => {
     res.render('new-post', {
         layout: 'dashboard',
@@ -29,7 +29,7 @@ router.get('/new', withAuth, (req, res) => {
      });
 
 
-     //edit post via dashboard
+//edit post via dashboard
      router.get('/edit/:id', withAuth, async (req, res) => {
         try {
           const postData = await Post.findByPk(req.params.id);
