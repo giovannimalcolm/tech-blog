@@ -48,10 +48,4 @@ router.get('/new', withAuth, (req, res) => {
           res.redirect('login');
         }
       });
-
-
-
-
-
-
     module.exports = router;
