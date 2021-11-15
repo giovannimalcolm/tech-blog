@@ -6,6 +6,11 @@
 
 CMS-style blog similar to Wordpress where developers can publish, edit, and delete blog posts with the ability to comment on other developers' posts as well. 
 
+![Screenshot1](public/images/one.png)
+![Screenshot2](public/images/two.png)
+![Screenshot3](public/images/three.png)
+
+
 ## Table of Contents
 
 * [Installation](#installation)
